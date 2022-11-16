@@ -17,24 +17,25 @@ choiceButtons.forEach(button => button.addEventListener("click", ()=>{
 
 function computerTurn(){
 
-    const randNum = Math.floor(math.random() * 3) + 1 ;
+    const randNum = Math.floor(Math.random() * 3) + 1 ;
+   
     switch(randNum){
         case 1: 
-        computer = "ROCK"
-        break
+        computer = "ROCK";
+        break;
         case 2:
-        computer = "PAPER"
-        break
+        computer = "PAPER";
+        break;
             case 3:
-       computer = "SCISSORS"
-       break
+       computer = "SCISSORS";
+       break;
     break
     }
 }
 function checkhWinner(){
     if(player == computer){
-    return "DRAW"}
-
+    return "DRAW!";
+}
     else if (computer =="ROCK"){
     return(player =="PAPER")? "you win!":"you lose!"}
    
